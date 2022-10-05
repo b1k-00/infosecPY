@@ -1,0 +1,21 @@
+#infosec Python Training
+#look back and  understand SCAPY and how wireshark helps
+
+>>> from scapy.all import *
+>>> packet = rdpcap('http.cap')
+>>> packet
+< ----
+>>> p = packet[0]
+>>> p.show()
+
+#display informatioin about the first packet
+
+
+#send packet somewhere else
+>>> p[TCP].DPORT = 8080
+>>>P.SHOW()
+
+
+#ip packet
+>>>p = IP()/TCP()\
+>>>P.SHOW()
